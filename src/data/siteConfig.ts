@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "Stalemax Technologies",
   shortName: "Stalemax",
-  tagline: "Software, crafted.",
+  tagline: "Software Consulting & Custom Product Engineering",
   description:
-    "We design and build custom software, AI-powered products, SaaS platforms, and enterprise applications engineered for performance and built to last.",
+    "Stalemax Technologies is a premier software consulting company and technology engineering firm. We consult, architect, and engineer custom enterprise software, AI solutions, SaaS platforms, and high-performance digital products for fast-growing businesses worldwide.",
   url: "https://stalemax.tech",
   email: "ombansal1232003@gmail.com",
   phone: "+91 90795 95565",

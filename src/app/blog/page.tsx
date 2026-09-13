@@ -3,8 +3,17 @@ import Link from "next/link";
 import { blogs } from "@/data/blogs";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Insights on software development, architecture, and building products from Stalemax Technologies.",
+  title: "Tech & Software Consulting Blog | Stalemax Insights",
+  description:
+    "Expert insights on software consulting, full-stack architecture, choosing tech stacks, SaaS engineering, and scaling digital products from Stalemax Technologies engineers.",
+  keywords: [
+    "software consulting blog",
+    "Stalemax blog",
+    "custom software insights",
+    "choosing tech stack",
+    "SaaS architecture tips",
+    "software engineering best practices",
+  ],
 };
 
 export default function BlogPage() {

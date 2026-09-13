@@ -4,8 +4,16 @@ import CareerForm from "@/components/forms/CareerForm";
 import { Briefcase, MapPin } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Careers",
-  description: "Join Stalemax Technologies and build premium software with a team that cares about craft.",
+  title: "Careers & Engineering Jobs | Stalemax Technologies",
+  description:
+    "Join Stalemax Technologies as a software engineer, AI developer, or technical consultant. Build cutting-edge products, enterprise platforms, and scalable SaaS solutions.",
+  keywords: [
+    "Stalemax careers",
+    "software consulting jobs",
+    "full-stack developer jobs",
+    "software engineering hiring",
+    "tech careers India",
+  ],
 };
 
 export default function CareersPage() {

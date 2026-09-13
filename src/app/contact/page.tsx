@@ -4,8 +4,31 @@ import { siteConfig } from "@/data/siteConfig";
 import ContactForm from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
-  description: "Get in touch with Stalemax Technologies for your next software project.",
+  title: "Book a Consultation | Contact Stalemax Technologies",
+  description:
+    "Schedule a free scoping and technical consultation with Stalemax Technologies. Discuss your software project, ERP requirements, SaaS product, or AI integrations with our senior consultants.",
+  keywords: [
+    "hire software consulting company",
+    "Stalemax contact",
+    "software consulting inquiry",
+    "book tech consultation",
+    "custom software development estimate",
+    "software consulting firm India",
+  ],
+  openGraph: {
+    title: "Book a Software Consultation | Stalemax Technologies",
+    description:
+      "Schedule a scoping and architecture session with Stalemax Technologies software consultants.",
+    url: `${siteConfig.url}/contact`,
+    images: [{ url: "/icon.jpg", width: 1200, height: 630, alt: "Contact Stalemax Technologies" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book a Software Consultation | Stalemax Technologies",
+    description:
+      "Get in touch with Stalemax Technologies for custom software, SaaS, and AI consulting.",
+    images: ["/icon.jpg"],
+  },
 };
 
 const contactDetails = [
