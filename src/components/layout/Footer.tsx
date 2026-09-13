@@ -41,6 +41,8 @@ export default function Footer() {
               <br />
               <Link href="/contact">Contact</Link>
               <br />
+              <Link href="/admin">Admin Portal</Link>
+              <br />
               <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
