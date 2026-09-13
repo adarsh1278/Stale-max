@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "Software Consulting & Custom Product Engineering",
   description:
     "Stalemax Technologies is a premier software consulting company and technology engineering firm. We consult, architect, and engineer custom enterprise software, AI solutions, SaaS platforms, and high-performance digital products for fast-growing businesses worldwide.",
-  url: "https://stalemax.tech",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.stalemax.tech",
   email: "ombansal1232003@gmail.com",
   phone: "+91 90795 95565",
   whatsapp: "919079595565",

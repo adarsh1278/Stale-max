@@ -85,6 +85,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.url,
   },
+  icons: {
+    icon: [{ url: "/icon.jpg", sizes: "any" }],
+    apple: [{ url: "/icon.jpg" }],
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
