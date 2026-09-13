@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import heroLeft from "./images/image3.jpg";
-import heroMain from "./images/image1.avif";
+import heroMain from "./images/image1.jpg";
 import heroRight from "./images/image2.jpg";
 
 const stackIcons = [
