@@ -12,6 +12,81 @@ const categories = [
   "E-commerce & Retail",
 ];
 
+function PortfolioMedia({ item }: { item: PortfolioItem }) {
+  const [loaded, setLoaded] = useState(false);
+  const [hasError, setHasError] = useState(false);
+  const [isOpening, setIsOpening] = useState(false);
+
+  return (
+    <div className="case-study-media">
+      {/* Loading Skeleton / Shimmer Animation */}
+      {!loaded && !hasError && (
+        <div className="skeleton-media-placeholder">
+          <div className="skeleton-loading-text">
+            <span className="skeleton-spinner" />
+            <span>Loading Platform Preview...</span>
+          </div>
+        </div>
+      )}
+
+      {hasError ? (
+        <div className="case-study-fallback">
+          <span className="case-study-tag" style={{ marginBottom: "12px" }}>
+            {item.category}
+          </span>
+          <h4 style={{ color: "var(--navy)", fontSize: "16px", fontWeight: 700, marginBottom: "6px" }}>
+            {item.title}
+          </h4>
+          <p style={{ color: "var(--muted)", fontSize: "13px" }}>
+            Live Production System
+          </p>
+        </div>
+      ) : (
+        <img
+          className={`case-study-img ${loaded ? "img-loaded" : "img-loading"}`}
+          src={item.image}
+          alt={item.title}
+          onLoad={() => setLoaded(true)}
+          onError={() => setHasError(true)}
+        />
+      )}
+
+      <div className="case-study-media-overlay">
+        <a
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => {
+            setIsOpening(true);
+            setTimeout(() => setIsOpening(false), 2000);
+          }}
+          className="btn-primary"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "8px",
+            padding: "12px 22px",
+            fontSize: "14px",
+            textDecoration: "none",
+          }}
+        >
+          {isOpening ? (
+            <>
+              <span className="btn-spinner" />
+              <span>Launching Platform...</span>
+            </>
+          ) : (
+            <>
+              <span>Open Live Platform</span>
+              <ExternalLink size={16} />
+            </>
+          )}
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export default function PortfolioList() {
   const [selectedCategory, setSelectedCategory] = useState("All Projects");
 
@@ -44,28 +119,7 @@ export default function PortfolioList() {
       <div style={{ display: "flex", flexDirection: "column", gap: "56px" }}>
         {filteredItems.map((item) => (
           <article key={item.id} id={item.id} className="case-study-card">
-            <div className="case-study-media">
-              <img className="case-study-img" src={item.image} alt={item.title} />
-              <div className="case-study-media-overlay">
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary"
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "8px",
-                    padding: "12px 22px",
-                    fontSize: "14px",
-                    textDecoration: "none",
-                  }}
-                >
-                  <span>Open Live Platform</span>
-                  <ExternalLink size={16} />
-                </a>
-              </div>
-            </div>
+            <PortfolioMedia item={item} />
 
             <div className="case-study-body">
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "8px", marginBottom: "12px" }}>

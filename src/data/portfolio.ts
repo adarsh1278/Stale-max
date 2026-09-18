@@ -21,7 +21,7 @@ export const portfolio: PortfolioItem[] = [
     title: "KVS Academy — School ERP & Institutional Management Portal",
     category: "EdTech & Institutional ERP",
     tagline: "Full-Stack CBSE School ERP & Academic Management System",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1400&auto=format&fit=crop",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Node.js", "PWA"],
     problem:
       "The academy was operating student attendance, examination results, fee invoices, and parent updates across disconnected paper registers and manual WhatsApp groups, creating billing discrepancies and communication lags.",

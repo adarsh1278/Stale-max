@@ -1,11 +1,56 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ExternalLink, ArrowRight, CheckCircle2 } from "lucide-react";
 import { products } from "@/data/products";
 
 const revealClasses = ["reveal-left", "reveal-right"];
+
+function ProductMedia({ image, title, badge }: { image: string; title: string; badge?: string }) {
+  const [loaded, setLoaded] = useState(false);
+  const [hasError, setHasError] = useState(false);
+
+  return (
+    <div style={{ position: "relative", overflow: "hidden", minHeight: "220px", background: "#f4f1fa" }}>
+      {!loaded && !hasError && (
+        <div className="skeleton-media-placeholder">
+          <div className="skeleton-loading-text">
+            <span className="skeleton-spinner" />
+            <span>Loading Preview...</span>
+          </div>
+        </div>
+      )}
+      <img
+        className={`product-card-img ${loaded ? "img-loaded" : "img-loading"}`}
+        src={image}
+        alt={title}
+        onLoad={() => setLoaded(true)}
+        onError={() => setHasError(true)}
+      />
+      {badge && (
+        <span
+          style={{
+            position: "absolute",
+            top: "14px",
+            right: "14px",
+            background: "rgba(23, 20, 60, 0.9)",
+            color: "#fff",
+            fontSize: "11px",
+            fontWeight: 700,
+            padding: "5px 12px",
+            borderRadius: "100px",
+            letterSpacing: "0.04em",
+            backdropFilter: "blur(6px)",
+            zIndex: 2,
+          }}
+        >
+          {badge}
+        </span>
+      )}
+    </div>
+  );
+}
 
 export default function Products() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -47,28 +92,7 @@ export default function Products() {
         <div className="grid-2" ref={containerRef}>
           {products.map((product, i) => (
             <div key={product.id} className={`product-card ${revealClasses[i % 2]}`}>
-              <div style={{ position: "relative", overflow: "hidden" }}>
-                <img className="product-card-img" src={product.image} alt={product.title} />
-                {product.badge && (
-                  <span
-                    style={{
-                      position: "absolute",
-                      top: "14px",
-                      right: "14px",
-                      background: "rgba(23, 20, 60, 0.9)",
-                      color: "#fff",
-                      fontSize: "11px",
-                      fontWeight: 700,
-                      padding: "5px 12px",
-                      borderRadius: "100px",
-                      letterSpacing: "0.04em",
-                      backdropFilter: "blur(6px)",
-                    }}
-                  >
-                    {product.badge}
-                  </span>
-                )}
-              </div>
+              <ProductMedia image={product.image} title={product.title} badge={product.badge} />
 
               <div className="product-card-body">
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "12px" }}>
