@@ -1,6 +1,15 @@
-# Stalemax Technologies — Website
+# Stalemax Technologies — Software Consulting & Custom Engineering
 
-Premium, full-stack marketing site + admin panel built with Next.js 15 (App Router), TypeScript, MongoDB/Mongoose, NodeMailer, React Hook Form, and Zod. Visual design matches the provided template exactly — no styling was changed.
+[![Live Website](https://img.shields.io/badge/Live_Site-www.stalemax.tech-17143C?style=for-the-badge&logo=vercel)](https://www.stalemax.tech)
+
+Official production repository for **[Stalemax Technologies](https://www.stalemax.tech)** (`stalemax.tech` / `www.stalemax.tech`).
+
+Stalemax Technologies is a premier software consulting company and technology engineering firm. We architect, design, and engineer custom enterprise software, AI solutions, SaaS platforms, and high-performance digital products for fast-growing businesses worldwide.
+
+- **Production Domain**: [https://www.stalemax.tech](https://www.stalemax.tech)
+- **Sitemap**: [https://www.stalemax.tech/sitemap.xml](https://www.stalemax.tech/sitemap.xml)
+- **Email**: ombansal1232003@gmail.com
+- **Phone / WhatsApp**: +91 90795 95565
 
 ## 1. Install dependencies
 
