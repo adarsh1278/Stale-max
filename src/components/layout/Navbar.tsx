@@ -14,7 +14,7 @@ export default function Navbar() {
     <header>
       <div className="navbar">
         <Link href="/" className="logo">
-          <img src={AppLogo.src} alt="App Logo" className="logo-img" />
+          <img src={AppLogo.src} alt="Stalemax Technologies — Software Consulting &amp; Technology" className="logo-img" />
           {siteConfig.shortName}
         </Link>
         <nav className="links">

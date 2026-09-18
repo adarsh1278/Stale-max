@@ -16,7 +16,7 @@ export const siteConfig = {
   mapsEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113827.7!2d77.6!3d28.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMeerut%2C+Uttar+Pradesh!5e0!3m2!1sen!2sin",
   social: {
-    github: "https://github.com/stalemax",
+    github: "https://github.com/adarsh1278/Stale-max",
     linkedin: "https://linkedin.com/company/stalemax",
     instagram: "https://instagram.com/stalemax",
     twitter: "https://x.com/stalemax",

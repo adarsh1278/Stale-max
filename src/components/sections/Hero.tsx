@@ -17,14 +17,14 @@ export default function Hero() {
     <div className="wrap">
       <section className="hero">
         <div>
-          <div className="eyebrow">Stalemax Technologies · Software Consulting &amp; Engineering</div>
+          <div className="eyebrow">Stalemax Technologies · Enterprise Software Consulting &amp; Technology</div>
           <h1 className="hero-title">
-            <span className="line">Stalemax software</span>
-            <span className="line">consulting built to scale</span>
-            <span className="line">your ambition.</span>
+            <span className="line">Stalemax Technology &amp;</span>
+            <span className="line">Software Consulting to Scale</span>
+            <span className="line">Your Ambition.</span>
           </h1>
           <p className="hero-sub">
-            Stalemax Technologies is an engineering and software consulting firm. We architect, design, and engineer custom enterprise platforms, AI products, and SaaS systems built to lead and endure.
+            Stalemax Technologies is a premier software consulting company and technology engineering firm. We architect, design, and engineer custom enterprise software, AI solutions, and SaaS platforms built to lead and endure.
           </p>
           <div className="hero-actions">
             <Link href="/contact">

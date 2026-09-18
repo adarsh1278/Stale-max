@@ -6,17 +6,23 @@ import { siteConfig } from "@/data/siteConfig";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Stalemax Technologies — Top Software Consulting & Custom Engineering Company",
+    default: "Stalemax Technologies — Software Consulting & Technology Engineering Company",
     template: "%s | Stalemax Technologies — Software Consulting Firm",
   },
   description:
     "Stalemax Technologies is a premier software consulting company and technology engineering firm. We architect, design, and engineer custom enterprise software, AI solutions, SaaS platforms, and high-performance digital products for startups and enterprises worldwide.",
   keywords: [
     "Stalemax",
+    "Stalemax Technology",
     "Stalemax Technologies",
-    "Stalemax Consulting",
     "Stalemax Tech",
+    "Stalemax Consulting",
     "Stalemax Software",
+    "stalemax.tech",
+    "www.stalemax.tech",
+    "stalemx.tech",
+    "stalemx",
+    "Stalemax Technologies Pvt Ltd",
     "software consulting company",
     "IT consulting company",
     "software consulting firm",
@@ -36,6 +42,7 @@ export const metadata: Metadata = {
     "KVS Academy ERP",
     "TBI-KIET portal",
     "Quality Veda compliance",
+    "Vijay Sharma Furniture",
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,
@@ -47,7 +54,7 @@ export const metadata: Metadata = {
     telephone: true,
   },
   openGraph: {
-    title: "Stalemax Technologies — Top Software Consulting & Custom Engineering Company",
+    title: "Stalemax Technologies — Software Consulting & Technology Engineering",
     description:
       "Premier software consulting company and digital engineering firm. We architect, build, and scale high-performance custom software, SaaS products, and AI solutions for ambitious businesses worldwide.",
     url: siteConfig.url,
@@ -59,13 +66,13 @@ export const metadata: Metadata = {
         url: "/icon.jpg",
         width: 1200,
         height: 630,
-        alt: "Stalemax Technologies — Top Software Consulting Company",
+        alt: "Stalemax Technologies — Software Consulting Company",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stalemax Technologies — Top Software Consulting & Custom Engineering Company",
+    title: "Stalemax Technologies — Software Consulting & Technology Company",
     description:
       "Premier software consulting company. We architect, build, and scale custom enterprise software, SaaS platforms, and AI applications.",
     images: ["/icon.jpg"],
@@ -86,7 +93,10 @@ export const metadata: Metadata = {
     canonical: siteConfig.url,
   },
   icons: {
-    icon: [{ url: "/icon.jpg", sizes: "any" }],
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.jpg", sizes: "any" },
+    ],
     apple: [{ url: "/icon.jpg" }],
   },
   verification: {
@@ -102,13 +112,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "@type": ["Organization", "ProfessionalService", "ConsultingService"],
         "@id": `${siteConfig.url}/#organization`,
         name: siteConfig.name,
+        legalName: "Stalemax Technologies",
         alternateName: [
           "Stalemax",
+          "Stalemax Technology",
+          "Stalemax Technologies",
           "Stalemax Consulting",
           "Stalemax Tech",
           "Stalemax Technologies Pvt Ltd",
           "Stalemax Software",
+          "stalemax.tech",
+          "stalemx.tech",
         ],
+        disambiguatingDescription:
+          "Stalemax Technologies (stalemax.tech) is a custom software consulting and technology engineering company specializing in enterprise software, AI, and SaaS platforms, distinct from industrial sealant or steel manufacturing brands.",
+        brand: {
+          "@type": "Brand",
+          name: "Stalemax",
+          alternateName: [
+            "Stalemax Technology",
+            "Stalemax Technologies",
+            "Stalemax Tech",
+          ],
+          url: siteConfig.url,
+          logo: `${siteConfig.url}/icon.jpg`,
+        },
         url: siteConfig.url,
         logo: `${siteConfig.url}/icon.jpg`,
         image: `${siteConfig.url}/icon.jpg`,
@@ -208,7 +236,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "@id": `${siteConfig.url}/#website`,
         url: siteConfig.url,
         name: siteConfig.name,
-        alternateName: "Stalemax",
+        alternateName: [
+          "Stalemax",
+          "Stalemax Technology",
+          "Stalemax Technologies",
+          "stalemax.tech",
+          "stalemx.tech",
+        ],
         description: siteConfig.description,
         publisher: {
           "@id": `${siteConfig.url}/#organization`,
