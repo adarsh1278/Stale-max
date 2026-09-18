@@ -28,7 +28,7 @@ export default function Hero() {
           </p>
           <div className="hero-actions">
             <Link href="/contact">
-              <button className="btn-primary">Book a Free Consultation</button>
+              <button className="btn-primary">Book a Consultation</button>
             </Link>
             <Link href="/portfolio">
               <button className="btn-secondary">Explore Our Work</button>

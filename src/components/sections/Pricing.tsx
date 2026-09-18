@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { pricingPlans, offers } from "@/data/pricing";
+import { pricingPlans } from "@/data/pricing";
 import { Check } from "lucide-react";
 
 export default function Pricing() {
@@ -15,14 +15,6 @@ export default function Pricing() {
             No published pricing here — every project is quoted after a scoping call. Here&apos;s what each tier
             typically includes.
           </p>
-        </div>
-
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "40px" }}>
-          {offers.map((offer) => (
-            <span key={offer} className="pill-badge">
-              {offer}
-            </span>
-          ))}
         </div>
 
         <div className="grid-4">

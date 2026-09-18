@@ -9,7 +9,7 @@ export const faqs: FaqItem[] = [
     id: "pricing",
     question: "How is pricing decided for a project?",
     answer:
-      "We don't work off a fixed price list because every project has a different scope, complexity, and timeline. Instead, we start with a free consultation to understand what you're building, who it's for, and what success looks like. From there we put together a detailed proposal that breaks down the phases of work, the team involved, and a clear cost estimate before anything is signed. You'll always know what you're paying for and why, and we flag any scope changes before they affect the budget rather than surprising you with it later.",
+      "We don't work off a fixed price list because every project has a different scope, complexity, and timeline. Instead, we start with a scoping consultation to understand what you're building, who it's for, and what success looks like. From there we put together a detailed proposal that breaks down the phases of work, the team involved, and a clear cost estimate before anything is signed. You'll always know what you're paying for and why, and we flag any scope changes before they affect the budget rather than surprising you with it later.",
   },
   {
     id: "timeline",

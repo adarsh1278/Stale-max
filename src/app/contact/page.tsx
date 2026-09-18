@@ -6,7 +6,7 @@ import ContactForm from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Book a Consultation | Contact Stalemax Technologies",
   description:
-    "Schedule a free scoping and technical consultation with Stalemax Technologies. Discuss your software project, ERP requirements, SaaS product, or AI integrations with our senior consultants.",
+    "Schedule a scoping and technical consultation with Stalemax Technologies. Discuss your software project, ERP requirements, SaaS product, or AI integrations with our senior consultants.",
   keywords: [
     "hire software consulting company",
     "Stalemax contact",

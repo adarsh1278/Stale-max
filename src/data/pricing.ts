@@ -61,12 +61,3 @@ export const pricingPlans: PricingPlan[] = [
     ],
   },
 ];
-
-export const offers = [
-  "1 Year Free Hosting",
-  "Free Landing Page",
-  "Free SSL Certificate",
-  "Free Deployment",
-  "Free Technical Consultation",
-  "Free Basic SEO Setup",
-];
