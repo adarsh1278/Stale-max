@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       "Frequently asked questions about software consulting, development timelines, pricing, code ownership, and post-launch support.",
     url: `${siteConfig.url}/faq`,
   },
+  alternates: {
+    canonical: `${siteConfig.url}/faq`,
+  },
 };
 
 export default function FaqPage() {

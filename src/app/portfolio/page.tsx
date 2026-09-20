@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     description: "Real-world production platforms and software consulting case studies.",
     images: ["/icon.jpg"],
   },
+  alternates: {
+    canonical: `${siteConfig.url}/portfolio`,
+  },
 };
 
 export default function PortfolioPage() {

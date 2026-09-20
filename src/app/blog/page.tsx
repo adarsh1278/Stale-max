@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { blogs } from "@/data/blogs";
+import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Tech & Software Consulting Blog | Stalemax Insights",
@@ -14,6 +15,9 @@ export const metadata: Metadata = {
     "SaaS architecture tips",
     "software engineering best practices",
   ],
+  alternates: {
+    canonical: `${siteConfig.url}/blog`,
+  },
 };
 
 export default function BlogPage() {

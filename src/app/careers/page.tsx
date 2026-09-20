@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { jobOpenings } from "@/data/careers";
 import CareerForm from "@/components/forms/CareerForm";
 import { Briefcase, MapPin } from "lucide-react";
+import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "Careers & Engineering Jobs | Stalemax Technologies",
@@ -14,6 +15,9 @@ export const metadata: Metadata = {
     "software engineering hiring",
     "tech careers India",
   ],
+  alternates: {
+    canonical: `${siteConfig.url}/careers`,
+  },
 };
 
 export default function CareersPage() {

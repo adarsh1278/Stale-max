@@ -29,6 +29,9 @@ export const metadata: Metadata = {
       "Get in touch with Stalemax Technologies for custom software, SaaS, and AI consulting.",
     images: ["/icon.jpg"],
   },
+  alternates: {
+    canonical: `${siteConfig.url}/contact`,
+  },
 };
 
 const contactDetails = [
